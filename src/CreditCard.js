@@ -6,15 +6,17 @@ function CreditCard(props) {
         backgroundColor : props.bgColor
 
     }
-    if (props.type === "Visa"){ img = "./../public/img/visa.png"}else {
-        img = "./../public/img/master-card.svg"
+    if (props.type === "Visa"){ img = "/img/visa.png"}else {
+        img = "/img/master-card.svg"
     }
     return (
         <div className="container cc " style={container}>
         <div>
-            <img src={img} />
+            <img className='cardLogos' src={img} />
         </div>
-        <div>{props.number}</div>
+        <div>**** **** **** {props.number.slice(-4)}</div>
+
+
     <div>{props.expirationMonth}/{props.expirationYear}<span>{props.bank}</span></div>
        
         
