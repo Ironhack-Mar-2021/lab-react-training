@@ -9,9 +9,10 @@ import Rating from './Rating';
 import DriverCard from './DriverCard';
 import LikeButton from './LikeButton.js';
 import ClickablePicture from './ClickablePicture';
-import Dice from './Dice'
-import Carousel from './Carousel'
-import NumbersTable from './NumbersTable'
+import Dice from './Dice';
+import Carousel from './Carousel';
+import NumbersTable from './NumbersTable';
+import FaceBook from './FaceBook';
 
 function App() {
   return (
@@ -95,8 +96,8 @@ function App() {
       <LikeButton />
 
       <ClickablePicture
-        img='/img/persons/maxence.png'
-        imgClicked='/img/persons/maxence-glasses.png'
+        img="/img/persons/maxence.png"
+        imgClicked="/img/persons/maxence-glasses.png"
       />
 
       <Dice />
@@ -106,11 +107,12 @@ function App() {
           'https://randomuser.me/api/portraits/women/1.jpg',
           'https://randomuser.me/api/portraits/men/1.jpg',
           'https://randomuser.me/api/portraits/women/2.jpg',
-          'https://randomuser.me/api/portraits/men/2.jpg'
+          'https://randomuser.me/api/portraits/men/2.jpg',
         ]}
       />
-    <NumbersTable limit={12} />
+      <NumbersTable limit={12} />
 
+      <FaceBook />
     </div>
   );
 }
